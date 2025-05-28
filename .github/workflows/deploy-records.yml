@@ -25,5 +25,5 @@ jobs:
         run: echo '{"cloudflare":{"TYPE":"CLOUDFLAREAPI","accountid":"$CF_ID","apitoken":"$CF_TOKEN"}}' > ./creds.json
       - run: dnscontrol push
         env:
-          CF_ID: ${{ secrets.CF_ACCOUNT_ID }}
-          CF_TOKEN: ${{ secrets.CF_API_TOKEN }}
+          CF_ID: ${{ secrets.ID }}
+          CF_TOKEN: ${{ secrets.CF_TOKEN }}
